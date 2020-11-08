@@ -23,7 +23,7 @@ public class PRESTAMOS_ACT extends AppCompatActivity {
         spinClientes = (Spinner)findViewById(R.id.spnClientes);
         spinCredito = (Spinner)findViewById(R.id.spnCredito);
         hashclientes = (HashMap<String, Integer>) getIntent().getSerializableExtra("Clientes");
-        String [] listadoClientes = {"(Seleccione Cliente)","Axel","Roxana"};
+        String [] listadoClientes = {"(Seleccione Cliente)","Axel","Roxana","danilo","chamelfo"};
         String [] listadoCreditos = {"(Seleccione Credito)","Credito Hipotecario","Credito Automotriz"};
         ArrayAdapter<String> adaptClientes = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,listadoClientes);
         spinClientes.setAdapter(adaptClientes);
